@@ -31,6 +31,7 @@ def bubble_sort(a_list):
                 a_list[j + 1] = temp
                 exchange += 1
 
+    # Add both variables to the tuple and print tuple
     t = (comparison, exchange)
     print(t)
 
@@ -53,6 +54,8 @@ def insertion_sort(a_list):
         position = i - 1
 
         while position >= 0:
+            
+            # Split the conditional statements in order to count comparisons
             if value < a_list[position]:
 
                 a_list[position + 1] = a_list[position]
